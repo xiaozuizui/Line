@@ -1,0 +1,15 @@
+D:\cgwork\WpfLine\WpfLine\bin\Debug\WpfLine.exe.config
+D:\cgwork\WpfLine\WpfLine\bin\Debug\WpfLine.exe
+D:\cgwork\WpfLine\WpfLine\bin\Debug\WpfLine.pdb
+D:\cgwork\WpfLine\WpfLine\obj\Debug\WpfLine.csprojResolveAssemblyReference.cache
+D:\cgwork\WpfLine\WpfLine\obj\Debug\MainWindow.g.cs
+D:\cgwork\WpfLine\WpfLine\obj\Debug\App.g.cs
+D:\cgwork\WpfLine\WpfLine\obj\Debug\WpfLine_MarkupCompile.cache
+D:\cgwork\WpfLine\WpfLine\obj\Debug\WpfLine_MarkupCompile.lref
+D:\cgwork\WpfLine\WpfLine\obj\Debug\MainWindow.baml
+D:\cgwork\WpfLine\WpfLine\obj\Debug\WpfLine.g.resources
+D:\cgwork\WpfLine\WpfLine\obj\Debug\WpfLine.Properties.Resources.resources
+D:\cgwork\WpfLine\WpfLine\obj\Debug\WpfLine.csproj.GenerateResource.cache
+D:\cgwork\WpfLine\WpfLine\obj\Debug\WpfLine.csproj.CoreCompileInputs.cache
+D:\cgwork\WpfLine\WpfLine\obj\Debug\WpfLine.exe
+D:\cgwork\WpfLine\WpfLine\obj\Debug\WpfLine.pdb
