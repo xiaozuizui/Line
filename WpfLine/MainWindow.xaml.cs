@@ -22,13 +22,13 @@ namespace WpfLine
    
     public partial class MainWindow : Window
     {
-        TextBlock[,] textBlocks = new TextBlock[50, 50];
+        TextBlock[,] textBlocks = new TextBlock[51, 51];
 
         public MainWindow()
         {
             InitializeComponent();
 
-            int width=50, height=50;
+            int width=51, height=51;
             
             
 
@@ -67,6 +67,13 @@ namespace WpfLine
         {
             DDA dda = new DDA(0, 0, 20, 20);
             DrawLine drawLine = new DrawLine(ref dda.points,ref  textBlocks);
+            drawLine.Draw();
+        }
+
+        private void Center_Circle_Click(object sender, RoutedEventArgs e)
+        {
+            Center_Circle cen = new Center_Circle(5, 0, 10);
+            DrawLine drawLine = new DrawLine(ref cen.points, ref textBlocks);
             drawLine.Draw();
         }
     }

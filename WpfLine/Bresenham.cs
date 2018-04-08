@@ -16,7 +16,7 @@ namespace WpfLine
             int e = -2 * dx;
             for (int x = x_start; x <= x_end; ++x)
             {
-                 = true;
+              
                 e += 2 * dy;
                 if (e > 0) ++y;
                 if (e >= dx) e -= 2 * dx;

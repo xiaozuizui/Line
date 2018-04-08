@@ -15,7 +15,7 @@ namespace WpfLine
             float y = y_start;
             for (int  x = x_start; x <= x_end; ++x)
             {
-                Point temp = new Point((int)Math.Round(y), x);
+                Point temp = new Point(x,(int)Math.Round(y));
                 points.Add(temp);
                 y += k;
             }

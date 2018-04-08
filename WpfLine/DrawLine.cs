@@ -29,8 +29,10 @@ namespace WpfLine
         {
             foreach(Point p in Points)
             {
-
-                textBlocks[p.x, p.y].Background = brush;
+                if (p.x > 50 || p.y > 50 || p.x < 0 || p.y < 0)
+                    continue;
+                else
+                    textBlocks[p.y, p.x].Background = brush;
             }
         }
     }
