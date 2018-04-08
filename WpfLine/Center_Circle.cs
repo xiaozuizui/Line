@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WpfLine
 {
-    class Center_Circle:Circle
+    public class Center_Circle:Circle
     {
         public Center_Circle(float _x, float _y, float R):base(_x,_y,R)
         {

@@ -17,9 +17,9 @@ using System.Threading.Tasks;
 */
 namespace WpfLine
 {
-    class Center_Circle_Int:Circle
+    public class Center_Circle_Int:Circle
     {
-        Center_Circle_Int(float _x, float _y, float R):base(_x,_y,R) 
+        public Center_Circle_Int(float _x, float _y, float R):base(_x,_y,R) 
         {
             int x = 0;
             int y = Convert.ToInt32(Rad);

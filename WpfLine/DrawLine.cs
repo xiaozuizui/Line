@@ -14,15 +14,11 @@ namespace WpfLine
         private List<Point> Points;
         private TextBlock [,] textBlocks;
 
-        public DrawLine(ref List<Point> points_,ref TextBlock [,] textBlocks_)
+        public DrawLine(ref List<Point> points_,ref TextBlock [,] textBlocks_,SolidColorBrush b)
         {
             Points = points_;textBlocks = textBlocks_;
-            Color color = new Color();
-            color.A = 255;
-            color.R = 0;
-            color.G = 0;
-            color.B = 0;
-            brush = new SolidColorBrush(color);
+            
+            brush = b;
         }
 
         public void Draw()

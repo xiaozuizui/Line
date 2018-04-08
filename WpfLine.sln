@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27428.2015
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfLine", "WpfLine\WpfLine.csproj", "{21056B6C-5C1D-4C30-82E2-DE3DCAD72469}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "time", "time\time.csproj", "{DE0983DE-FE8E-4A4F-B91B-F271994EB448}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{21056B6C-5C1D-4C30-82E2-DE3DCAD72469}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21056B6C-5C1D-4C30-82E2-DE3DCAD72469}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21056B6C-5C1D-4C30-82E2-DE3DCAD72469}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE0983DE-FE8E-4A4F-B91B-F271994EB448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE0983DE-FE8E-4A4F-B91B-F271994EB448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE0983DE-FE8E-4A4F-B91B-F271994EB448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE0983DE-FE8E-4A4F-B91B-F271994EB448}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

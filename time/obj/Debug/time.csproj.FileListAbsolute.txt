@@ -1,0 +1,10 @@
+E:\Line\time\bin\Debug\time.exe.config
+E:\Line\time\bin\Debug\time.exe
+E:\Line\time\bin\Debug\time.pdb
+E:\Line\time\bin\Debug\WpfLine.exe
+E:\Line\time\bin\Debug\WpfLine.pdb
+E:\Line\time\bin\Debug\WpfLine.exe.config
+E:\Line\time\obj\Debug\time.csprojResolveAssemblyReference.cache
+E:\Line\time\obj\Debug\time.csproj.CoreCompileInputs.cache
+E:\Line\time\obj\Debug\time.exe
+E:\Line\time\obj\Debug\time.pdb

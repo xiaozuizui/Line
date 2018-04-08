@@ -12,7 +12,7 @@ using System.Threading.Tasks;
  */
 namespace WpfLine
 {
-    class Center_Circle_Int_Optimize:Circle
+    public class Center_Circle_Int_Optimize:Circle
     {
         public Center_Circle_Int_Optimize(float _x, float _y, float R) : base(_x, _y, R)
         {

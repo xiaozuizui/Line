@@ -12,15 +12,15 @@
             <ColumnDefinition Width="350"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <Grid   Name="MainG" Grid.Column="0" Height="510" Width="510"></Grid>
-        <Grid Grid.Column="0" Name="BorderG" Height="510" Width="510">
+        <Grid   Name="MainG" Grid.Column="0" Height="510" Width="510" HorizontalAlignment="Center"></Grid>
+        <Grid Grid.Column="0" Name="BorderG" Height="510" Width="510" HorizontalAlignment="Center">
             
             <StackPanel Name="col" Orientation="Horizontal">
                
             </StackPanel>
             <StackPanel Name="row" Orientation="Vertical"></StackPanel>
-        </Grid>
-        <Grid Name="sphere" Grid.Column="0" Height="510" Width="510">
+        </Grid >
+        <Grid Name="sphere" Grid.Column="0" Height="510" Width="510" HorizontalAlignment="Center">
             <Canvas Name="canvas">
             
 
@@ -33,16 +33,26 @@
             <StackPanel Margin="10,30,0,0">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock FontSize="20"> 圆心 x: </TextBlock>
-                    <TextBox Width="30" Name="c_x" Margin="10,0,0,0"></TextBox>
+                    <TextBox Width="30" Name="c_x" Margin="10,0,0,0" Text="0" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBox>
                     <TextBlock FontSize="20" Margin="10,0,0,0">y: </TextBlock>
-                    <TextBox Width="30" Name="c_y" Margin="10,0,0,0"></TextBox>
+                    <TextBox Width="30" Name="c_y" Margin="10,0,0,0" Text="0" VerticalAlignment="Center" ></TextBox>
                     <TextBlock  FontSize="20" Margin="10,0,0,0"> 半径 ：</TextBlock>
-                    <TextBox Width="30" Name="rad"></TextBox>
+                    <TextBox Width="30" Name="rad" Text="10" VerticalAlignment="Center"></TextBox>
                 </StackPanel>
                 
                 <Button Height="30" Width="150" Click="Center_Circle_Click" Content="绘制中点圆" Margin="0,20,0,0"></Button>
+                <Button Height="30" Width="150" Click="Center_Circle_Int_Click" Content="绘制中点圆(整数)" Margin="0,20,0,0"></Button>
                 <Button Height="30" Width="150" Click="Center_Circle_Int_Optimize_Click" Content="绘制中点圆(整数优化)" Margin="0,20,0,0"></Button>
+                
+                <Button Height="30" Width="150" Click="Parameter_Equation_Click" Content="参数方程画圆" Margin="0,20,0,0"></Button>
                 <Button Height="30" Width="80" Content="Clean" Click="Clean_Click" Margin="0,20,0,0"></Button>
+            </StackPanel>
+
+            <StackPanel Margin="0,100,0,0" Orientation="Horizontal" >
+                <TextBlock Width="200"  Name="color"></TextBlock>
+                <Slider Orientation="Vertical" Height=" 100" Minimum="0" Maximum="255" Name="R" Margin="10,0,0,0" ValueChanged="ValueChanged"></Slider>
+                <Slider Orientation="Vertical" Height=" 100" Minimum="0" Maximum="255" Name="G" Margin="10,0,0,0" ValueChanged="ValueChanged"></Slider>
+                <Slider Orientation="Vertical" Height=" 100" Minimum="0" Maximum="255" Name="B" Margin="10,0,0,0" ValueChanged="ValueChanged"></Slider>
             </StackPanel>
         </StackPanel>
     </Grid>
