@@ -23,7 +23,7 @@ namespace WpfLine
             int dt = 3;
             int db = -2 * Convert.ToInt32(Rad) + 5;
 
-            while (y > x)//绘制八分之一,右上圆
+            while (y >= x)//绘制八分之一,右上圆
             {
                 DrawCirclePoints(x, y);
                 if (d < 0)//选择上光栅点,y不变

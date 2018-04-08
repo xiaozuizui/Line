@@ -38,7 +38,7 @@ namespace WpfLine
             for(int i=0;i<points.Count;i++)
             {
                 points[i].x += 25+c_x;
-                points[i].y = -points[i].y + 25+c_y;
+                points[i].y  = -points[i].y+ 25+c_y;
             }
         }
     }

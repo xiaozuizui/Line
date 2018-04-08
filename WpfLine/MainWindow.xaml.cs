@@ -35,7 +35,7 @@ namespace WpfLine
                 MainG.RowDefinitions.Add(new RowDefinition());
                 col.Children.Add(new Border() { BorderThickness = new Thickness(1, 0, 0, 0), BorderBrush = new SolidColorBrush(new Color { A = 255, R = 0, G = 0, B = 0 }), Height = 510, Width = 10 });
             }
-            col.Children.Add(new Border() { BorderThickness = new Thickness(1, 0, 0, 0), BorderBrush = new SolidColorBrush(new Color { A = 255, R = 0, G = 0, B = 0 }), Height = 510, Width = 10 });
+            col.Children.Add(new Border() { BorderThickness = new Thickness(1, 0,1, 0), BorderBrush = new SolidColorBrush(new Color { A = 255, R = 0, G = 0, B = 0 }), Height = 510, Width = 10 });
 
             for (int i = 0; i < width; i++)
             {
@@ -68,10 +68,39 @@ namespace WpfLine
 
         private void Center_Circle_Click(object sender, RoutedEventArgs e)
         {
-            Center_Circle cen = new Center_Circle(5, 0, 10);
+
+            float x, y, Rad;
+            x = (float)Convert.ToDouble(c_x.Text);
+            y = (float)Convert.ToDouble(c_y.Text);
+            Rad = (float)Convert.ToDouble(rad.Text);
+
+            Center_Circle cen = new Center_Circle( x,-y, Rad);
             DrawLine drawLine = new DrawLine(ref cen.points, ref textBlocks);
             drawLine.Draw();
+
+            Ellipse ellipse = new Ellipse() { Width = Rad*20, Height = Rad*20, Opacity = 1.5, Stroke = new SolidColorBrush(Colors.Red), StrokeThickness = 5 };
+            Canvas.SetLeft(ellipse, (x-Rad)*10+255);
+            Canvas.SetTop(ellipse, -(y +Rad)*10+255);
+            canvas.Children.Add(ellipse);
+
         }
+        private void Center_Circle_Int_Optimize_Click(object sender, RoutedEventArgs e)
+        {
+            float x, y, Rad;
+            x = (float)Convert.ToDouble(c_x.Text);
+            y = (float)Convert.ToDouble(c_y.Text);
+            Rad = (float)Convert.ToDouble(rad.Text);
+
+            Center_Circle_Int_Optimize cen = new Center_Circle_Int_Optimize(x, -y, Rad);
+            DrawLine drawLine = new DrawLine(ref cen.points, ref textBlocks);
+            drawLine.Draw();
+
+            Ellipse ellipse = new Ellipse() { Width = Rad * 20, Height = Rad * 20, Opacity = 1.5, Stroke = new SolidColorBrush(Colors.Red), StrokeThickness = 5 };
+            Canvas.SetLeft(ellipse, (x - Rad) * 10 + 255);
+            Canvas.SetTop(ellipse, -(y + Rad) * 10 + 255);
+            canvas.Children.Add(ellipse);
+        }
+
 
         private void Clean_Click(object sender, RoutedEventArgs e)
         {
@@ -82,6 +111,7 @@ namespace WpfLine
                     textBlocks[i, j].Background = null;
                 }
             }
+            canvas.Children.Clear();
         }
     }
 }
