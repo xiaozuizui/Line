@@ -65,6 +65,7 @@
     <Compile Include="Bresenham.cs" />
     <Compile Include="Center_Circle.cs" />
     <Compile Include="Center_Circle_Int.cs" />
+    <Compile Include="Center_Circle_Int_Optimize.cs" />
     <Compile Include="Circle.cs" />
     <Compile Include="DDA.cs" />
     <Compile Include="DrawLine.cs" />

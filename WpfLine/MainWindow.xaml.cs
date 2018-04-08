@@ -29,21 +29,20 @@ namespace WpfLine
             InitializeComponent();
 
             int width=51, height=51;
-            
-            
 
-            for(int i=0;i<height;i++)
+            for (int i=0;i<height;i++)
             {
                 MainG.RowDefinitions.Add(new RowDefinition());
-                BorderG.RowDefinitions.Add(new RowDefinition());
+                col.Children.Add(new Border() { BorderThickness = new Thickness(1, 0, 0, 0), BorderBrush = new SolidColorBrush(new Color { A = 255, R = 0, G = 0, B = 0 }), Height = 510, Width = 10 });
             }
-                
+            col.Children.Add(new Border() { BorderThickness = new Thickness(1, 0, 0, 0), BorderBrush = new SolidColorBrush(new Color { A = 255, R = 0, G = 0, B = 0 }), Height = 510, Width = 10 });
+
             for (int i = 0; i < width; i++)
             {
                 MainG.ColumnDefinitions.Add(new ColumnDefinition());
-                BorderG.ColumnDefinitions.Add(new ColumnDefinition());
+               row.Children.Add(new Border() { BorderThickness = new Thickness(0, 1, 0, 0), BorderBrush = new SolidColorBrush(new Color { A = 255, R = 0, G = 0, B = 0 }), Height = 10, Width = 510 });
             }
-                
+             row.Children.Add(new Border() { BorderThickness = new Thickness(0, 1, 0, 0), BorderBrush = new SolidColorBrush(new Color { A = 255, R = 0, G = 0, B = 0 }), Height = 10, Width = 510 });
 
             for(int i=0;i<height; i++)
             {
@@ -53,14 +52,11 @@ namespace WpfLine
                     Grid.SetRow(textBlocks[i, j], i);
                     Grid.SetColumn(textBlocks[i, j], j);
                     MainG.Children.Add(textBlocks[i, j]);
-
-                    Border border = new Border() { BorderThickness = new Thickness(1), BorderBrush = new SolidColorBrush(new Color { A = 255, R = 0, G = 0, B = 0 }),Height = 10,Width = 10 };
-                    Grid.SetRow(border, i);
-                    Grid.SetColumn(border, j);
-                    BorderG.Children.Add(border);
                 }
             }
-               
+
+          
+
         }
 
         private void test_Click(object sender, RoutedEventArgs e)
@@ -75,6 +71,17 @@ namespace WpfLine
             Center_Circle cen = new Center_Circle(5, 0, 10);
             DrawLine drawLine = new DrawLine(ref cen.points, ref textBlocks);
             drawLine.Draw();
+        }
+
+        private void Clean_Click(object sender, RoutedEventArgs e)
+        {
+            for (int i = 0; i < 51; i++)
+            {
+                for (int j = 0; j < 51; j++)
+                {
+                    textBlocks[i, j].Background = null;
+                }
+            }
         }
     }
 }

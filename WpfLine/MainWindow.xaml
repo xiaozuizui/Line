@@ -8,16 +8,22 @@
         Title="MainWindow" Height="600" Width="1000">
     <Grid >
         <Grid.ColumnDefinitions >
-            <ColumnDefinition Width="500" ></ColumnDefinition>
+            <ColumnDefinition Width="520" ></ColumnDefinition>
             <ColumnDefinition Width="200"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <Grid   Name="MainG" Grid.Column="0" Height="500" Width="500"></Grid>
-        <Grid Grid.Column="0" Name="BorderG" Height="500" Width="500"></Grid>
+        <Grid   Name="MainG" Grid.Column="0" Height="510" Width="510"></Grid>
+        <Grid Grid.Column="0" Name="BorderG" Height="510" Width="510">
+            <StackPanel Name="col" Orientation="Horizontal">
+               
+            </StackPanel>
+            <StackPanel Name="row" Orientation="Vertical"></StackPanel>
+        </Grid>
 
         <StackPanel Grid.Column="1" >
-        <Button Height="40" Width="40"  Click="test_Click"></Button>
-        <Button Height="40" Width="40" Click="Center_Circle_Click"></Button>
+            <Button Height="20" Width="60" Content="Clean" Click="Clean_Click"></Button>
+            <Button Height="40" Width="40"  Click="test_Click"></Button>
+        <Button Height="40" Width="40" Click="Center_Circle_Click" Content="中点圆"></Button>
         </StackPanel>
     </Grid>
 </Window>
