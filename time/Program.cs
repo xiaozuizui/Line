@@ -24,9 +24,9 @@ namespace time
             double time_parameter_equation = 0;
             int numOfcircle = 1000000;
 
-            float x = 1.0f;
-            float y = 1.0f;
-            float rad = 9.2f;
+            float x = 3.0f;
+            float y = 3.0f;
+            float rad = 20.2f;
 
             watch.Start();//开始计时
             for (int i=0;i<numOfcircle;i++)

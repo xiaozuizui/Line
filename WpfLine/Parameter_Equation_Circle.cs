@@ -19,7 +19,7 @@ namespace WpfLine
                 DrawCirclePoints(x, y);
                 x = Convert.ToInt32( R* Math.Cos(thta));
                 y = Convert.ToInt32(R * Math.Sin(thta));
-                thta += 1.0/36.0*Math.PI;
+                thta += 1.0/72.0*Math.PI;
              }
 
             Transfer();
