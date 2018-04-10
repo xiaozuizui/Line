@@ -1,0 +1,15 @@
+E:\Line\WpfLine\bin\Release\WpfLine.exe.config
+E:\Line\WpfLine\bin\Release\WpfLine.exe
+E:\Line\WpfLine\bin\Release\WpfLine.pdb
+E:\Line\WpfLine\obj\Release\WpfLine.csprojResolveAssemblyReference.cache
+E:\Line\WpfLine\obj\Release\MainWindow.g.cs
+E:\Line\WpfLine\obj\Release\App.g.cs
+E:\Line\WpfLine\obj\Release\WpfLine_MarkupCompile.cache
+E:\Line\WpfLine\obj\Release\WpfLine_MarkupCompile.lref
+E:\Line\WpfLine\obj\Release\MainWindow.baml
+E:\Line\WpfLine\obj\Release\WpfLine.g.resources
+E:\Line\WpfLine\obj\Release\WpfLine.Properties.Resources.resources
+E:\Line\WpfLine\obj\Release\WpfLine.csproj.GenerateResource.Cache
+E:\Line\WpfLine\obj\Release\WpfLine.csproj.CoreCompileInputs.cache
+E:\Line\WpfLine\obj\Release\WpfLine.exe
+E:\Line\WpfLine\obj\Release\WpfLine.pdb

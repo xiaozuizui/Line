@@ -22,11 +22,11 @@ namespace time
             double time_centet_circle_int = 0;
             double time_center_circle_int_optimize = 0;
             double time_parameter_equation = 0;
-            int numOfcircle = 1000000;
+            int numOfcircle = 100000;
 
-            float x = 3.0f;
-            float y = 3.0f;
-            float rad = 20.2f;
+            float x = 3.1f;
+            float y = 3.2f;
+            float rad = 12.2f;
 
             watch.Start();//开始计时
             for (int i=0;i<numOfcircle;i++)
@@ -63,10 +63,10 @@ namespace time
             watch.Stop();
             time_center_circle_int_optimize = watch.Elapsed.TotalSeconds;
 
-            Console.WriteLine(time_parameter_equation);
-            Console.WriteLine(time_center_circle);
-            Console.WriteLine(time_centet_circle_int);
-            Console.WriteLine(time_center_circle_int_optimize);
+            Console.WriteLine("参数方程："+time_parameter_equation);
+            Console.WriteLine("中点圆："+time_center_circle);
+            Console.WriteLine("中点圆整数："+time_centet_circle_int);
+            Console.WriteLine("中点圆整数优化："+time_center_circle_int_optimize);
 
         }
     }
